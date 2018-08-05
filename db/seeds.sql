@@ -1,0 +1,1 @@
+Insert Into burgers (burger_name) 
