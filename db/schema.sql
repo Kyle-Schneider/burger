@@ -3,6 +3,9 @@
 --      * **burger_name**: a string.
 --      * **devoured**: a boolean.
 
+CREATE DATABASE burgers_db;
+USE burgers_db;
+
 create table burgers(
     id INT AUTO_INCREMENT NOT NULL,
     burger_name varchar(200) NOT NULL,
