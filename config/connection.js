@@ -3,8 +3,8 @@ var mysql = require("mysql");
 require('dotenv').config()
 var connection;
 
-if(process.env.JAWSDB_URL) {
-    connection = mysql.createConnection(process.env.JAWSDB_URL);
+if('mysql://wrp96kqe8ky1h8ki:vad96uhn6ewtkha4@a5s42n4idx9husyc.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ltugb1ld9usgv5yf') {
+    connection = mysql.createConnection("mysql://wrp96kqe8ky1h8ki:vad96uhn6ewtkha4@a5s42n4idx9husyc.cbetxkdyhwsb.us-east-1.rds.amazonaws.com:3306/ltugb1ld9usgv5yf");
 } else {
 connection = mysql.createConnection({
   host: "localhost",
@@ -14,7 +14,6 @@ connection = mysql.createConnection({
   database: "burgers_db"
 });
 
-console.log(process.env.JAWSDB_URL)
 
 // Make connection.
 connection.connect(function(err) {
