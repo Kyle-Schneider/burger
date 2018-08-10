@@ -8,6 +8,8 @@ router.get("/", function(req, res) {
   res.redirect("/burgers");
 });
 
+
+// handlebars burger data
 router.get("/burgers", function(req, res) {
   // express callback response by calling burger.selectAllBurger
   burger.all(function(burgerData) {
