@@ -1,4 +1,4 @@
-// Set up MySQL connection.
+
 var mysql = require("mysql");
 require('dotenv').config()
 var connection;
@@ -25,5 +25,5 @@ connection.connect(function(err) {
 });
 
 
-// Export connection for our ORM to use.
+
 module.exports = connection;
