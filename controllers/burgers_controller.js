@@ -8,7 +8,7 @@ router.get("/", function(req, res) {
 });
 
 
-// handlebars burger data
+
 router.get("/burgers", function(req, res) {
   
   burger.all(function(Data) {
