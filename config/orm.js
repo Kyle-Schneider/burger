@@ -1,4 +1,4 @@
-// * Import (require) `connection.js` into `orm.js`
+
 
 var connection = require("./connection.js");
 ////////////////////////////////////////
@@ -12,9 +12,9 @@ function printQuestionMarks(num) {
   return arr.toString();
 }
 /////////////////////////////////////////////////////////////////////
-// Helper function to convert object key/value pairs to SQL syntax
+
 function objToSql(ob) {
-  // column1=value, column2=value2,...
+
   var arr = [];
 
   for (var key in ob) {
@@ -34,8 +34,7 @@ var orm = {
       cb(result);
     });
   },
-  // vals is an array of values that we want to save to cols
-  // cols are the columns we want to insert the values into
+
 
 ////////////////////////////////////////////////////
 
@@ -61,8 +60,6 @@ var orm = {
 
 /////////////////////////////////////////////////////////
 
-  // objColVals would be the columns and values that you want to update
-  // an example of objColVals would be {name: panther, sleepy: true}
   update: function(table, objColVals, condition, cb) {
     var queryString = "UPDATE " + table;
 
